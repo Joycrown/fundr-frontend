@@ -79,18 +79,19 @@ const Footer = () => {
                 </Text>
               </Link> */}
             </Box>
-            <Box>
+            {/* <Box>
               <Text fontWeight="bold" mt={5} color="white">
                 Trading
               </Text>
               <Text mt={2}>Partners</Text>
               <Text mt={2}>Fast Track</Text>
               <Text mt={2}>Leaderboard</Text>
-            </Box>
+            </Box> */}
           </Stack>
           <Box pl={{ lg: "20" }} py={10}>
             <Text
               display={{ base: "none", lg: "block" }}
+              fontSize={{ base: "sm", lg: "md" }}
               color="rgba(255, 255, 255, 0.53)"
               mt={10}
             >
@@ -127,6 +128,7 @@ const Footer = () => {
             <Text
               display={{ base: "block", lg: "none" }}
               color="rgba(255, 255, 255, 0.53)"
+              fontSize={{ base: "sm", lg: "md" }}
               mt={10}
             >
               Fund’r and the myfundr.co website is owned and operated by New

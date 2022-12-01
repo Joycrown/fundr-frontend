@@ -175,7 +175,7 @@ const Trade = () => {
 
               <HStack spacing={1}>
                 <Box
-                  p={3}
+                  p={4}
                   bg="linear-gradient(90deg, rgba(97, 101, 215, 0.31) 0%, rgba(69, 161, 245, 0.53) 100%)"
                   boxShadow="0px 4px 10px rgba(0, 0, 0, 0.25)"
                   borderRadius="2xl"
@@ -184,7 +184,7 @@ const Trade = () => {
                   {item.aoumnt}
                 </Box>
                 <Box
-                  p={3}
+                  p={4}
                   bg="linear-gradient(90deg, rgba(97, 101, 215, 0.31) 0%, rgba(69, 161, 245, 0.53) 100%)"
                   boxShadow="0px 4px 10px rgba(0, 0, 0, 0.25)"
                   borderRadius="2xl"
@@ -193,7 +193,7 @@ const Trade = () => {
                   {item.aoumnt1}
                 </Box>
                 <Box
-                  p={3}
+                  p={4}
                   bg="linear-gradient(90deg, rgba(97, 101, 215, 0.31) 0%, rgba(69, 161, 245, 0.53) 100%)"
                   boxShadow="0px 4px 10px rgba(0, 0, 0, 0.25)"
                   borderRadius="2xl"

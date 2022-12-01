@@ -105,14 +105,13 @@ const Faq = () => {
                 <Evaluation />
               </TabPanel>
               <TabPanel>
-                <FastScale />
+                <TradingRules />
               </TabPanel>
               <TabPanel>
-                <TradingRules />
+                <FastScale />
               </TabPanel>
             </TabPanels>
           </Tabs>
-         
         </VStack>
       </Box>
     </Box>

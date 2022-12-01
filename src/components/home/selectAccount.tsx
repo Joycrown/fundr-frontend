@@ -85,7 +85,7 @@ const SelectAccount = () => {
                     </Text>
                   </Box>
                 </HStack>
-                <Text mt={10} color="white" px={{base:"6%"}}>
+                <Text mt={10} color="white" px={{base:"6%"}} display={{base:"none", lg:"block"}}>
                   *Minimum trading days is the minimum number of  days in
                   your evaluation and verification stages 
                   that you are required to execute a trade. <br /> <br />

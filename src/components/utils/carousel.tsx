@@ -195,22 +195,25 @@ export default function Slider() {
                     </Text>
                   </Box>
                   <Box
-                    p={{ base: "2", lg: "5" }}
+                    p={{ base: "5", lg: "5" }}
                     bg="white"
                     color="#000000"
                     cursor="pointer"
-                    onClick={() => { setValue(slide.price); onOpen()}}
+                    onClick={() => {
+                      setValue(slide.price);
+                      onOpen();
+                    }}
                   >
                     <HStack>
                       <Text
                         as="del"
-                        fontSize={{ base: "md", lg: "lg" }}
+                        fontSize={{ base: "lg", lg: "lg" }}
                         fontWeight="bold"
                       >
                         {slide.old_price}
                       </Text>
                       <Text
-                        fontSize={{ base: "md", lg: "lg" }}
+                        fontSize={{ base: "lg", lg: "lg" }}
                         fontWeight="extrabold"
                       >
                         {slide.price}
@@ -221,6 +224,7 @@ export default function Slider() {
               </Box>
             ))}
           </Flex>
+
           <Box display={{ base: "none", lg: "block" }}>
             <SlArrowLeft
               style={{
@@ -326,6 +330,20 @@ export default function Slider() {
           </HStack>
         </Flex>
       </Flex>
+        <Text
+        mt={10}
+        pb={10}
+          color="white"
+          px={{ base: "6%" }}
+          display={{ base: "block", lg: "none" }}
+        >
+          *Minimum trading days is the minimum number of days in your evaluation
+          and verification stages that you are required to execute a trade.{" "}
+          <br /> <br />
+          *Minimum profit days is the minimum number of days in your evaluation
+          and verification stages that you are required to close your trades in
+          profit
+        </Text>
     </>
   );
 }

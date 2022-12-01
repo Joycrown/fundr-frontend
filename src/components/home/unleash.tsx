@@ -76,14 +76,14 @@ const Unleash = () => {
             >
               <Box
                 cursor="pointer"
-                p={{ base: "4", md: "5", lg: "5" }}
+                p={{ base: "5", md: "5", lg: "5" }}
                 bgColor="#000000FC"
                 color="white"
                 borderRadius="2xl"
               >
                 <Text
                   fontWeight="bold"
-                  fontSize={{ base: "sm", md: "lg", lg: "2xl" }}
+                  fontSize={{ base: "md", md: "lg", lg: "2xl" }}
                 >
                   JOIN WAITLIST
                 </Text>
