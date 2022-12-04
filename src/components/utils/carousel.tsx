@@ -200,7 +200,7 @@ export default function Slider() {
                     color="#000000"
                     cursor="pointer"
                     onClick={() => {
-                      setValue(slide.price);
+                      setValue(slide.heading);
                       onOpen();
                     }}
                   >

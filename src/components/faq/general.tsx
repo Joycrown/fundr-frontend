@@ -7,6 +7,7 @@ import {
   AccordionPanel,
   VStack,
   Heading,
+  Link,
 } from "@chakra-ui/react";
 import React from 'react'
 
@@ -145,7 +146,10 @@ const General = () => {
             <AccordionPanel pb={4} fontSize={{ base: "sm", lg: "large" }}>
               Yes, we have an open Discord community for every trader with a
               private channel for our community of Fund'r Talents. Join our
-              Discord community [here] (https://discord.gg/tcmzYAk6vm).
+              Discord community
+              <Link color="teal.500" href="https://discord.gg/tcmzYAk6vm">
+                [here]
+              </Link>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -163,8 +167,13 @@ const General = () => {
             </h2>
             <AccordionPanel pb={4} fontSize={{ base: "sm", lg: "large" }}>
               All Fund'r accounts are Metatrader 5 compatible. Andriod users can
-              download [here] IOS users can access the platform [here]
-              (https://trade.mql5.com/trade).
+              download [here] IOS users can access the platform
+              <Link
+                color="teal.500"
+                href="https://play.google.com/store/apps/details?id=net.metaquotes.metatrader5"
+              >
+                [here]
+              </Link>
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>
@@ -300,12 +309,16 @@ const General = () => {
             <AccordionPanel pb={4} fontSize={{ base: "sm", lg: "large" }}>
               High Frequency Trading (Manual / EA) : multiple & very short-term
               trades (positions opened and closed under a minute, seconds or
-              fractions of seconds) Martingale: multipliers of first opened
-              position, same symbol and direction. Automated News-Based trading:
-              bots with ability to read news items and take instant trading
-              actions in response. Using these strategies will cause the
-              deactivation of your account and voiding of profit withdrawals (if
-              any). .
+              fractions of seconds)
+              <br /> <br />
+              Martingale: multipliers of first opened position, same symbol and
+              direction. <br />
+              <br />
+              Automated News-Based trading: bots with ability to read news items
+              and take instant trading actions in response. <br />
+              <br />
+              Using these strategies will cause the deactivation of your account
+              and voiding of profit withdrawals (if any). .
             </AccordionPanel>
           </AccordionItem>
           <AccordionItem>

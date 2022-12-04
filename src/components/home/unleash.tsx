@@ -37,7 +37,6 @@ const Unleash = () => {
         h={{ base: "none", md: "none", lg: "auto" }}
       >
         <Box
-          display={{ base: "none", lg: "block" }}
           bgImage="url('/images/Group 14.png')"
           bgPosition="center"
           width="100%"
@@ -46,63 +45,7 @@ const Unleash = () => {
           bgSize={{ base: "cover", md: "cover" }}
         >
           <VStack spacing={10} pb={5}>
-            <Box mt={{ base: "20", md: "20", lg: "36" }}>
-              <Text
-                fontSize={{ base: "4xl", md: "5xl", lg: "8xl" }}
-                textAlign="center"
-              >
-                Unleash Your <br />
-                <Box as="span" fontWeight="bold">
-                  Full Potential
-                </Box>
-              </Text>
-            </Box>
-            <Box>
-              <Text
-                fontSize={{ base: "lg", md: "2xl", lg: "4xl" }}
-                fontWeight="bold"
-                textAlign="center"
-              >
-                Because capital should be the least of your worries.
-              </Text>
-            </Box>
-
-            <Scroll
-              activeClass="active"
-              to="accountSelect"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-            >
-              <Box
-                cursor="pointer"
-                p={{ base: "5", md: "5", lg: "5" }}
-                bgColor="#000000FC"
-                color="white"
-                borderRadius="2xl"
-              >
-                <Text
-                  fontWeight="bold"
-                  fontSize={{ base: "md", md: "lg", lg: "2xl" }}
-                >
-                  JOIN WAITLIST
-                </Text>
-              </Box>
-            </Scroll>
-          </VStack>
-        </Box>
-        <Box
-          display={{ base: "block", lg: "none" }}
-          bgImage="url('/images/Group 14 (1).png')"
-          bgPosition="center"
-          width="100%"
-          overflowX="hidden"
-          bgRepeat="no-repeat"
-          bgSize={{ base: "cover", md: "cover" }}
-        >
-          <VStack spacing={10} pb={5}>
-            <Box mt={{ base: "20", md: "20", lg: "36" }}>
+            <Box mt={{ base: "20", md: "20", lg: "36" }} id="landing">
               <Text
                 fontSize={{ base: "4xl", md: "5xl", lg: "8xl" }}
                 textAlign="center"

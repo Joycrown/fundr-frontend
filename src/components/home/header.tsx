@@ -8,11 +8,12 @@ import {
   DrawerOverlay,
   HStack,
   Image,
+  Link,
   Text,
   useDisclosure,
   VStack
 } from "@chakra-ui/react";
-import { IoMenuOutline, IoPerson } from "react-icons/io5"
+import { IoMenuOutline } from "react-icons/io5"
 import { Link as Scroll } from "react-scroll";
 
 const Header = () => {
@@ -24,14 +25,18 @@ const Header = () => {
       <Box>
         <Box bg="brand.primary" w="100%" p={5}>
           <HStack justifyContent="space-between">
-            <Image
-              src="/images/Fund'r Logo.png"
-              boxSize={{ base: "6", md: "10", lg: "10" }}
-              width={{ base: "40%", md: "30%", lg: "20%" }}
-            />
+            <Link href='/'
+              
+            >
+              <Image
+                src="/images/Fund'r Logo.png"
+                boxSize={{ base: "6", md: "10", lg: "10" }}
+                width={{ base: "70%", md: "30%", lg: "100%" }}
+              />
+            </Link>
             <Box display={{ base: "block", lg: "none" }}>
               <HStack gap={2}>
-                <IoPerson size={20} />
+                {/* <IoPerson size={20} /> */}
                 <Box onClick={onOpen}>
                   <IoMenuOutline size={32} />
                 </Box>
@@ -160,22 +165,22 @@ const Header = () => {
             </Box>
             <Box pl="8rem" display={{ base: "none", lg: "block" }}>
               <Scroll
-                    activeClass="active"
-                    to="accountSelect"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                  <Box p={5} border="1px" borderRadius="2xl" cursor="pointer">
-                    <HStack spacing={5}>
-                      {/* <IoPerson /> */}
-                      
-                        <Text fontSize="large" fontWeight="extrabold">
-                          Join Waitlist
-                        </Text>
+                activeClass="active"
+                to="accountSelect"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                <Box p={5} border="1px" borderRadius="2xl" cursor="pointer">
+                  <HStack spacing={5}>
+                    {/* <IoPerson /> */}
+
+                    <Text fontSize="large" fontWeight="extrabold">
+                      Join Waitlist
+                    </Text>
                   </HStack>
-                 </Box>
+                </Box>
               </Scroll>
             </Box>
           </HStack>

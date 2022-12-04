@@ -1,4 +1,4 @@
-import { Box, HStack, Stack, Text } from '@chakra-ui/react'
+import { Box, HStack, Link, Stack, Text } from '@chakra-ui/react'
 import { FaDiscord, FaInstagram, FaLinkedin, FaTelegramPlane, FaTwitter } from "react-icons/fa";
 import { Link as Scroll } from "react-scroll";
 
@@ -17,13 +17,29 @@ const Footer = () => {
                 Get in touch
               </Text>
               <HStack spacing={2} mt={2}>
-                <FaDiscord color="white" />
-                <FaTelegramPlane color="white" />
-                <FaInstagram color="white" />
-                <FaTwitter color="white" />
-                <FaLinkedin color="white" />
+                <Link href="https://discord.gg/tcmzYAk6vm">
+                  <FaDiscord cursor="pointer" color="white" />
+                </Link>
+                <Link href="https://t.me/my_fundr">
+                  <FaTelegramPlane cursor="pointer" color="white" />
+                </Link>
+                <Link href="https://www.instagram.com/my_fundr/">
+                  <FaInstagram cursor="pointer" color="white" />
+                </Link>
+                <Link href="https://twitter.com/my_fundr">
+                  <FaTwitter cursor="pointer" color="white" />
+                </Link>
+                <Link href="https://www.linkedin.com/company/myfundr/">
+                  <FaLinkedin cursor="pointer" color="white" />
+                </Link>
               </HStack>
-              <Text mt={2}>Join Community</Text>
+              <Link href="https://discord.gg/tcmzYAk6vm">
+                
+                <Text cursor="pointer" mt={2}>
+                  Join Community
+                </Text>
+              </Link>
+
               <Text mt={2}>support@myfundr.co</Text>
             </Box>
             <Box>
