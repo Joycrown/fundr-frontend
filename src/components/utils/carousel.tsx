@@ -204,7 +204,7 @@ export default function Slider() {
                       onOpen();
                     }}
                   >
-                    <HStack>
+                    <HStack justifyContent="center">
                       <Text
                         as="del"
                         fontSize={{ base: "lg", lg: "lg" }}
@@ -219,6 +219,13 @@ export default function Slider() {
                         {slide.price}
                       </Text>
                     </HStack>
+                    <Text
+                      fontSize={{ base: "lg", lg: "2xl" }}
+                      fontWeight="bold"
+                    >
+                      {" "}
+                      JOIN HERE!
+                    </Text>
                   </Box>
                 </VStack>
               </Box>
@@ -310,7 +317,7 @@ export default function Slider() {
               size={70}
             />
           </Box>
-          <HStack justify="center" pos="absolute" bottom="-2px" w="full">
+          {/* <HStack justify="center" pos="absolute" bottom="-6px" w="full">
             {Array.from({ length: slidesCount }).map((_, slide) => (
               <Box
                 key={`dots-${slide}`}
@@ -327,23 +334,23 @@ export default function Slider() {
                 onClick={() => setSlide(slide)}
               ></Box>
             ))}
-          </HStack>
+          </HStack> */}
         </Flex>
       </Flex>
-        <Text
+      <Text
         mt={10}
         pb={10}
-          color="white"
-          px={{ base: "6%" }}
-          display={{ base: "block", lg: "none" }}
-        >
-          *Minimum trading days is the minimum number of days in your evaluation
-          and verification stages that you are required to execute a trade.{" "}
-          <br /> <br />
-          *Minimum profit days is the minimum number of days in your evaluation
-          and verification stages that you are required to close your trades in
-          profit
-        </Text>
+        color="white"
+        px={{ base: "6%" }}
+        display={{ base: "block", lg: "none" }}
+      >
+        *Minimum trading days is the minimum number of days in your evaluation
+        and verification stages that you are required to execute a trade. <br />{" "}
+        <br />
+        *Minimum profit days is the minimum number of days in your evaluation
+        and verification stages that you are required to close your trades in
+        profit
+      </Text>
     </>
   );
 }
