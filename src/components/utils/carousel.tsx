@@ -100,9 +100,9 @@ export default function Slider() {
   const nextSlide = () => {
     setCurrentSlide((s) => (s === slidesCount - 1 ? 0 : s + 1));
   };
-  const setSlide = (slide:any) => {
-    setCurrentSlide(slide);
-  };
+  // const setSlide = (slide:any) => {
+  //   setCurrentSlide(slide);
+  // };
   const carouselStyle = {
     transition: "all .5s",
     ml: `-${currentSlide * 100}%`,
